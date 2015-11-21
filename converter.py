@@ -16,16 +16,22 @@ a = fi.read()
 
 
 hits = [m.start() for m in re.finditer(r"Câu\b" , a)]
-if (len(hits) == 0) hits = [m.start() for m in re.finditer(r"Question\b" , a)]
-if (len(hits) == 0) hits = [m.start() for m in re.finditer(r"Q\b" , a)]
+if (len(hits) == 0): 
+	hits = [m.start() for m in re.finditer(r"Question\b" , a)]
+if (len(hits) == 0):
+	hits = [m.start() for m in re.finditer(r"Q\b" , a)]
 Ahits = [m.start() for m in re.finditer(r"A\." , a)]
-if (len(Ahits) == 0) Ahits = [m.start() for m in re.finditer(r"a\." , a)]
+if (len(Ahits) == 0):
+	Ahits = [m.start() for m in re.finditer(r"a\." , a)]
 Bhits = [m.start() for m in re.finditer(r"B\." , a)]
-if (len(Bhits) == 0) Bhits = [m.start() for m in re.finditer(r"b\." , a)]
+if (len(Bhits) == 0):
+	Bhits = [m.start() for m in re.finditer(r"b\." , a)]
 Chits = [m.start() for m in re.finditer(r"C\." , a)]
-if (len(Chits) == 0) Chits = [m.start() for m in re.finditer(r"c\." , a)]
+if (len(Chits) == 0):
+	Chits = [m.start() for m in re.finditer(r"c\." , a)]
 Dhits = [m.start() for m in re.finditer(r"D\." , a)]
-if (len(Dhits) == 0) Dhits = [m.start() for m in re.finditer(r"d\." , a)]
+if (len(Dhits) == 0):
+	Dhits = [m.start() for m in re.finditer(r"d\." , a)]
 
 print hits , Ahits , Bhits , Chits , Dhits
 
@@ -73,7 +79,11 @@ while (qi < len(hits)):
 
 	tres = {}
 
-	tres["question"] =  a[hits[qi]:Ahits[ai]].decode("utf-8")
+	if (a[hits[qi]+7] == ' '):
+		tres["question"] =  a[hits[qi]+7:Ahits[ai]].decode("utf-8")
+	else:
+		tres["question"] =  a[hits[qi]+8:Ahits[ai]].decode("utf-8")
+
 	tres["answer"] = []
 	tres["answer"].append(a[Ahits[ai]+2:Bhits[bi]].decode("utf-8"))
 	tres["answer"].append(a[Bhits[bi]+2:Chits[ci]].decode("utf-8"))
