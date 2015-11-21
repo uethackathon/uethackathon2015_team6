@@ -1,0 +1,71 @@
+Chương I: Cơ chế di truyền và Biến dị
+
+Câu 1. Cơ sở vật chất của hiện tượng di truyền ở cấp độ phân tử là:
+
+A. Protein
+B. ARN
+C. Axit nucleic
+D. ADN
+
+Câu 2. Trong tế bào sinh dưỡng của cơ thể lưỡng bội gen thường tồn tại thành từng cặp alen. Nguyên nhân vì:
+
+A. Trong mọi tế bào, gen luôn tồn tại theo cặp alen (AA, Aa...)
+B. Ở tế bào sinh dưỡng, NST thường tồn tại theo từng cặp tương đồng
+C. Tồn tại theo cặp alen giúp các gen hoạt động tốt hơn
+D. Các gen luôn được sắp xếp theo từng cặp.
+
+Câu 3. Người ta dựa vào đặc điểm nào sau đây để chia 3 loại ARN là mARN, tARN, rARN?
+
+A. Cấu hình không gian
+B. Số loại đơn phân
+C. Khối lượng và kích thước
+D. Chức năng của mỗi loại
+
+Câu 4. Những mô tả nào sau đây về NST giới tính là đúng?
+
+A. Ở đa số động vật, NST giới tính gồm có 1 cặp, khác nhau ở 2 giới
+B. NST giới tính chỉ gồm 1 cặp NST đồng dạng, khác nhau ở 2 giới
+C. Ở động vật, con cái mang cặp NST giới tính XX, con đực mang cặp NST giới tinh XY.
+D. NST giới tính chỉ có trong các tế bào sinh dục.
+
+Câu 5. Protein là
+
+A. Một nhóm gen ở trên 1 đoạn ADN có liên quan về chức năng, có chung một cơ chế điều hòa
+B. Một đoạn phân tử ADN có một chức năng nhất định trong quá trình điều hòa
+C. Một đoạn phân tử axit nucleic có chức năng điều hòa hoạt động của gen cấu trúc
+D. Một tập hợp gồm các gen cấu trúc và gen điều hòa nằm cạnh nhau
+
+Câu 6: Giả sử một gen của vi khuẩn có số nucleotit là 3000. Hỏi số axit amin trong phân tử protein có cấu trúc bậc 1 được tổng hợp từ gen trên là bao nhiêu?
+
+A. 500
+B. 499
+C. 498
+D. 750
+
+Câu 7. Quá trình hoạt hóa aa có vai trò
+
+A. Gắn aa vào tARN tương ứng nhờ enzim đặc hiệu.
+B. Gắn aa vào tARN nhờ enzim nổi ligaza.
+C. Kích hoạt aa và gắn nó vào tARN
+D. Sử dụng năng lượng ATP để kích hoạt aa
+
+Câu 8: Loại ARN nào mang bộ ba đối mã?
+
+A. mARN
+B. tARN
+C. rARN
+D. ARN của virut
+
+Câu 9. Điều nào không đúng với ưu điểm của thể đa bội với thể lưỡng bội?
+
+A. Cơ quan sinh dưỡng lớn hơn
+B. Độ hữu thụ lớn hơn
+C. Phát triển khỏe hơn
+D. Có sức chống chịu tốt hơn
+
+Câu 10. Điểm khác nhau cơ bản giữa gen cấu trúc và gen điều hòa là:
+
+A. Về cấu trúc gen
+B. Về chức năng của Protein do gen tổng hợp
+C. Về khả năng phiên mã của gen
+D. Về vị trí phân bố của gen.

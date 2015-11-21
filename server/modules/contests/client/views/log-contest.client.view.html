@@ -1,0 +1,21 @@
+<section ng-controller="logContestsController" ng-init="init()">
+	<h2 class="page-header">{{contest.header + "'s log"}}</h2>
+	<div class="container col-md-8">
+	  <div class="list-group"  style="overflow: scroll; height: 500px">
+	    <a ng-repeat = "answer in answers" ng-click="setSelect(answer)" class="list-group-item" ng-class="{'active': answer == selected}">
+	      <h4 class="list-group-item-heading row">
+	      	<span class="col-md-9">{{answer.username}}</span>
+	      	<span class="col-md-3">{{answer.correct + '/' + answer.total}}</span>
+	      </h4>
+	      <p class="list-group-item-text">{{'AnswerID: ' + answer._id}}</p>
+	    </a>
+	  </div>
+	</div>
+	<div class="container col-md-4 detail-ctn" ng-show="selected">
+		<h2 class="page-header" style = "border-bottom: 5px solid white">Answers<h2>
+		<h4 ng-repeat="question in selected.questions" class="col-md-4" class="answer-detail">
+			<span class="label" style="float: left; width: 100px" ng-class="{'label-success': question.correct, 'label-danger': !question.correct}">{{$index}}</span>
+		</h4>
+	</div>
+
+</section>

@@ -3,7 +3,10 @@
 
     <string name="title_section1">Làm bài thi</string>
     <string name="title_section2">Làm quiz</string>
-    <string name="title_section3">Đăng xuất</string>
+    <string name="title_section3">Đánh giá năng lực</string>
+    <string name="title_section4">Đăng xuất</string>
+    <string name="submit">Nộp bài</string>
+    <string name="server">https://10.10.213.203:3000</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>

@@ -1,0 +1,92 @@
+[
+    {
+        "answer": [
+            " Protein\n",
+            " ARN\n",
+            " Axit nucleic\n",
+            " ADN\n\n"
+        ],
+        "question": "Câu 1. Cơ sở vật chất của hiện tượng di truyền ở cấp độ phân tử là:\n\n"
+    },
+    {
+        "answer": [
+            " Trong mọi tế bào, gen luôn tồn tại theo cặp alen (AA, Aa...)\n",
+            " Ở tế bào sinh dưỡng, NST thường tồn tại theo từng cặp tương đồng\n",
+            " Tồn tại theo cặp alen giúp các gen hoạt động tốt hơn\n",
+            " Các gen luôn được sắp xếp theo từng cặp.\n\n"
+        ],
+        "question": "Câu 2. Trong tế bào sinh dưỡng của cơ thể lưỡng bội gen thường tồn tại thành từng cặp alen. Nguyên nhân vì:\n\n"
+    },
+    {
+        "answer": [
+            " Cấu hình không gian\n",
+            " Số loại đơn phân\n",
+            " Khối lượng và kích thước\n",
+            " Chức năng của mỗi loại\n\n"
+        ],
+        "question": "Câu 3. Người ta dựa vào đặc điểm nào sau đây để chia 3 loại ARN là mARN, tARN, rARN?\n\n"
+    },
+    {
+        "answer": [
+            " Ở đa số động vật, NST giới tính gồm có 1 cặp, khác nhau ở 2 giới\n",
+            " NST giới tính chỉ gồm 1 cặp NST đồng dạng, khác nhau ở 2 giới\n",
+            " Ở động vật, con cái mang cặp NST giới tính XX, con đực mang cặp NST giới tinh XY.\n",
+            " NST giới tính chỉ có trong các tế bào sinh dục.\n\n"
+        ],
+        "question": "Câu 4. Những mô tả nào sau đây về NST giới tính là đúng?\n\n"
+    },
+    {
+        "answer": [
+            " Một nhóm gen ở trên 1 đoạn ADN có liên quan về chức năng, có chung một cơ chế điều hòa\n",
+            " Một đoạn phân tử ADN có một chức năng nhất định trong quá trình điều hòa\n",
+            " Một đoạn phân tử axit nucleic có chức năng điều hòa hoạt động của gen cấu trúc\n",
+            " Một tập hợp gồm các gen cấu trúc và gen điều hòa nằm cạnh nhau\n\n"
+        ],
+        "question": "Câu 5. Protein là\n\n"
+    },
+    {
+        "answer": [
+            " 500\n",
+            " 499\n",
+            " 498\n",
+            " 750\n\n"
+        ],
+        "question": "Câu 6: Giả sử một gen của vi khuẩn có số nucleotit là 3000. Hỏi số axit amin trong phân tử protein có cấu trúc bậc 1 được tổng hợp từ gen trên là bao nhiêu?\n\n"
+    },
+    {
+        "answer": [
+            " Gắn aa vào tARN tương ứng nhờ enzim đặc hiệu.\n",
+            " Gắn aa vào tARN nhờ enzim nổi ligaza.\n",
+            " Kích hoạt aa và gắn nó vào tARN\n",
+            " Sử dụng năng lượng ATP để kích hoạt aa\n\n"
+        ],
+        "question": "Câu 7. Quá trình hoạt hóa aa có vai trò\n\n"
+    },
+    {
+        "answer": [
+            " mARN\n",
+            " tARN\n",
+            " rARN\n",
+            " ARN của virut\n\n"
+        ],
+        "question": "Câu 8: Loại ARN nào mang bộ ba đối mã?\n\n"
+    },
+    {
+        "answer": [
+            " Cơ quan sinh dưỡng lớn hơn\n",
+            " Độ hữu thụ lớn hơn\n",
+            " Phát triển khỏe hơn\n",
+            " Có sức chống chịu tốt hơn\n\n"
+        ],
+        "question": "Câu 9. Điều nào không đúng với ưu điểm của thể đa bội với thể lưỡng bội?\n\n"
+    },
+    {
+        "answer": [
+            " Về cấu trúc gen\n",
+            " Về chức năng của Protein do gen tổng hợp\n",
+            " Về khả năng phiên mã của gen\n",
+            " Về vị trí phân bố của gen."
+        ],
+        "question": "Câu 10. Điểm khác nhau cơ bản giữa gen cấu trúc và gen điều hòa là:\n\n"
+    }
+]

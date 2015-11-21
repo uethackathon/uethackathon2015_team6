@@ -1,0 +1,230 @@
+'use strict';
+
+// contests controller
+angular.module('contests').controller('contestsController', ['$scope', '$stateParams', '$location', 'Authentication', 'contests',
+  function ($scope, $stateParams, $location, Authentication, contests) {
+    $scope.authentication = Authentication;
+
+    $scope.header = {
+      id: "header",
+      edit: true,
+      text: ""  
+    };
+
+    $scope.questions = [];
+    
+    $scope.startEdit = function(obj){
+      setTimeout(function(){
+        obj.edit = true;  
+        $scope.$apply();
+        $("#" + obj.id + "-edit").trigger('select');
+      }, 100);
+      //$("#" + obj.id + "-edit").trigger('select');
+    }
+
+    $scope.finishEdit = function(obj, callback){
+      if (obj.text === "")
+        return;
+      obj.edit = false;
+      if (callback){
+        callback(obj);
+      }
+    };
+
+    $scope.addNewChoice = function(obj){
+      var id = obj.length;
+      obj.push({
+        id: obj.id + "c" + id.toString(),
+        edit: true,
+        text: ""
+      });
+      setTimeout(function(){
+        $("#" + id.toString() + "-edit").trigger('select');
+        $("#" + id.toString() + "-edit").keyup(function (event) {
+          if (event.keyCode == 13 && event.shiftKey) {   
+              addNewQuestion();
+          }
+        });
+      }, 100);
+    }
+
+    $scope.addNewQuestion = function(){
+      var id = $scope.questions.length;
+      $scope.questions.push({
+        id: "q" + id.toString(),
+        edit: true,
+        text: "",
+        choices: []
+      });
+      setTimeout(function(){
+        $("#" + id.toString() + "-edit").trigger('select');
+      }, 100);
+    }
+    // Create new Contest
+    /*$scope.create = function (isValid) {
+      $scope.error = null;
+
+      if (!isValid) {
+        $scope.$broadcast('show-errors-check-validity', 'contestForm');
+
+        return false;
+      }
+
+      // Create new Contest object
+      var contest = new Contests({
+        title: this.title,
+        content: this.content
+      });
+
+      // Redirect after save
+      contest.$save(function (response) {
+        $location.path('contests/' + response._id);
+
+        // Clear form fields
+        $scope.title = '';
+        $scope.content = '';
+      }, function (errorResponse) {
+        $scope.error = errorResponse.data.message;
+      });
+    };
+
+    // Remove existing Contest
+    $scope.remove = function (contest) {
+      if (contest) {
+        contest.$remove();
+
+        for (var i in $scope.contests) {
+          if ($scope.contests[i] === contest) {
+            $scope.contests.splice(i, 1);
+          }
+        }
+      } else {
+        $scope.contest.$remove(function () {
+          $location.path('contests');
+        });
+      }
+    };
+
+    // Update existing Contest
+    $scope.update = function (isValid) {
+      $scope.error = null;
+
+      if (!isValid) {
+        $scope.$broadcast('show-errors-check-validity', 'contestForm');
+
+        return false;
+      }
+
+      var contest = $scope.contest;
+
+      contest.$update(function () {
+        $location.path('contests/' + contest._id);
+      }, function (errorResponse) {
+        $scope.error = errorResponse.data.message;
+      });
+    };
+
+    // Find a list of contests
+    $scope.find = function () {
+      $scope.contests = contests.query();
+    };
+
+    // Find existing Contest
+    $scope.findOne = function () {
+      $scope.contest = contests.get({
+        contestId: $stateParams.contestId
+      });
+    };*/
+  }
+]);
+
+
+<section ng-controller="contestsController">
+  <h2>
+    <div id="{{header.id + '-text'}}" ng-hide="header.edit" ng-bind="header.text" ng-click="startEdit(header)">{{header.text}}</h1>
+    <form ng-show="header.edit" ng-submit="finishEdit(header)">
+      <input id="{{header.id + '-edit'}}" type="text" ng-model="header.text" ng-blur="finishEdit(header)" placeholder="Enter title"/>
+    </form>
+  </h2>
+  <br>
+  <br>
+  <div ng-repeat="question in questions">
+    <div id="{{question.id + '-text'}}" ng-hide="question.edit" ng-bind="question.text" ng-click="startEdit(question)">{{question.text}}</div>
+    <form ng-show="question.edit" ng-submit="finishEdit(question, addNewChoice, question)">
+      <input id="{{question.id + '-edit'}}" type="text" ng-model="question.text" ng-blur="finishEdit(question)" placeholder="Enter question"/>
+    </form>
+    <div class="col-md-offset-1" ng-repeat="choice in question.choices">
+      <div id="{{choice.id + '-text'}}" ng-hide="choice.edit" ng-bind="choice.text" ng-click="startEdit(choice)">{{choice.text}}</div>
+      <form ng-show="choice.edit" ng-submit="finishEdit(choice, addNewChoice, question)">
+        <input id="{{choice.id + '-edit'}}" type="text" ng-model="choice.text" ng-blur="finishEdit(choice)" placeholder="Enter choice"/>
+      </form>
+    </div>
+    <form class="col-md-offset-1" ng-submit="addNewChoice(question, text)">
+      <input type="text" ng-model="currentText" ng-blur="addNewChoice(question, text)" placeholder="Enter choice"/>
+    </form>
+  </div>
+  <button ng-click="addNewQuestion()">Add question</button>
+
+</section>
+
+   $scope.authentication = Authentication;
+
+    $scope.header = {
+      id: "header",
+      edit: true,
+      text: ""  
+    };
+
+    $scope.questions = [];
+    
+    $scope.startEdit = function(obj){
+      setTimeout(function(){
+        obj.edit = true;  
+        $scope.$apply();
+        $("#" + obj.id + "-edit").trigger('select');
+      }, 100);
+      //$("#" + obj.id + "-edit").trigger('select');
+    }
+
+    $scope.finishEdit = function(obj, callback, callbackArg){
+      obj.edit = false;
+      if (callback){
+        callback(callbackArg);
+      }
+    };
+
+    $scope.addNewQuestion = function(){
+      var id = "q" + $scope.questions.length.toString();
+      $scope.questions.push({
+        id: id,
+        edit: true,
+        text: "",
+        choices: []
+      });
+      setTimeout(function(){
+        console.log(99);
+        $("#" + id + "-edit").trigger('select');
+      }, 0);
+    }
+
+    $scope.addNewChoice = function(obj, text){
+      console.log(obj);
+      var id = obj.id + "c" + obj.choices.length.toString();
+      obj.choices.push({
+        id:  id,
+        edit: true,
+        text: text
+      });
+      /*setTimeout(function(){
+        $("#" + id + "-edit").trigger('select');
+        /*setTimeout(function(){
+          $("#" + id + "-edit").keyup(function (event) {
+            if (event.keyCode == 40) {   
+                console.log(333);
+                $scope.addNewQuestion();
+            }
+          });
+
+        }, 0);*/
+      }, 0);
+    }

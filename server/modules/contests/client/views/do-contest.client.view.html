@@ -1,0 +1,35 @@
+<section ng-controller="doContestsController" ng-init="init()">
+  <div class="row">
+    <h2 class="col-md-6 page-header">
+      <div id="{{header.id + '-text'}}">{{header.text}}</div>
+    </h2>  
+    <div class="score" ng-show="score">
+      <div><b>{{'Score: ' + correct + '/' + total}}</b></div>
+    </div>  
+  </div>
+  
+  <br>
+
+  <div class="container col-md-10 questions">
+    <div ng-repeat="question in questions" class="question">
+      <div class="row">
+        <span><b>{{($index + 1).toString() + "."}}</b></span>
+        <span><b>{{question.text}}</b></span> 
+      </div>
+      <br>
+      <div class="col-md-offset-1" ng-repeat="choice in question.choices">
+        <button class="btn-xs" ng-class="{'btn-success': choice.correct, 'btn-defaut': !choice.correct}" ng-click="toggleChoice(choice)"><b>{{chr[$index] + "."}}</b></button>
+        <span class="choice">{{choice.text}}</span>
+      </div>
+      <br>
+    </div>
+
+
+    <br>
+
+    <button class="btn-lg btn-success" ng-click="submit()">Submit</button>
+    <div class="row" style="height: 300px"></div>
+  </div>
+
+
+</section>
